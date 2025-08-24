@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ------------ Header Section ------------ -->
+
+    <section class="about-header">
+        <nav>
+            <a href="./index.html"><img src="./images/logo.png" alt="Eduford Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./courses.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- ------------ About Us Content ------------ -->
+    <section class="about-content">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world largest university</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ad modi pariatur illum est
+                    distinctio sapiente ut voluptate harum ipsum temporibus aspernatur dolor, ab exercitationem
+                    incidunt, dicta labore neque minima minus ullam blanditiis earum eligendi? Nihil aliquam voluptas ut
+                    id, doloremque eos earum optio. Repellendus aut praesentium sequi animi mollitia.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./images/about.jpg" alt="About Image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------ Footer Section ------------ -->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Quidem ea maiores architecto, consequuntur
+            exercitationem alias expedita natus, <br>facilis distinctio perferendis voluptate odit ad asperiores! Qui!
+        </p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="foot">Made By <i class="fa fa-regular fa-heart"></i> Muhammad Noman</p>
+    </section>
+
+    <!-- ---JS for Toggle Menu--- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
